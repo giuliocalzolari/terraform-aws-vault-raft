@@ -1,0 +1,19 @@
+repos:
+  - repo: git://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.62.3
+    hooks:
+      - id: terraform_fmt
+      - id: terraform_docs
+      # - id: terraform_validate
+  - repo: git://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+      - id: check-json
+      - id: double-quote-string-fixer
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: forbid-new-submodules
+      - id: detect-private-key
+      - id: detect-aws-credentials
